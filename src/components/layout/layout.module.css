@@ -1,0 +1,11 @@
+.layout > * {
+	min-height: calc(100vh - var(--header-height, 0.25rem));
+	padding-top: calc(var(--header-height, 0.25rem) / 2);
+	padding-bottom: calc(var(--header-height, 0.25rem) / 2);
+
+	/* stylelint-disable-next-line media-feature-range-notation */
+	@media (min-width: 768px) {
+		padding-top: 0;
+		padding-bottom: var(--header-height, 0.25rem);
+	}
+}

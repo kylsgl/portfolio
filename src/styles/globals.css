@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	.card {
+		transform-style: preserve-3d;
+
+		&::before {
+			left: -0.125rem;
+			width: calc(100% + 0.25rem);
+			transform: translate3d(0, 0, -1rem);
+		}
+
+		&.popped {
+			transform: translateY(-0.5rem);
+
+			&::before {
+				transform: translate3d(0, 0.5rem, -1rem);
+			}
+		}
+
+		@media (hover: hover) {
+			&.hoverable {
+				&:hover {
+					transform: translateY(-0.5rem);
+
+					&::before {
+						transform: translate3d(0, 0.5rem, -1rem);
+					}
+				}
+
+				&:active {
+					transform: translateY(0);
+
+					&::before {
+						transform: translate3d(0, 0, -1rem);
+					}
+				}
+			}
+		}
+
+		@apply bg-white border-2 border-black duration-200 ease-in-out font-mono px-4 py-2 relative ring-black rounded-lg shadow-xl text-black transition-transform uppercase before:absolute before:bg-black before:border-inherit before:duration-200 before:ease-in-out before:h-full before:shadow-md before:rounded-lg before:top-0 dark:bg-black dark:border-white dark:ring-white dark:text-white dark:before:bg-white motion-reduce:transition-none;
+	}
+}
+
+:root {
+	--header-height: 6.5rem;
+}
