@@ -40,7 +40,7 @@
 			}
 		}
 
-		@apply bg-white border-2 border-black duration-200 ease-in-out font-mono px-4 py-2 relative ring-black rounded-lg shadow-xl text-black transition-transform uppercase before:absolute before:bg-black before:border-inherit before:duration-200 before:ease-in-out before:h-full before:shadow-md before:rounded-lg before:top-0 dark:bg-black dark:border-white dark:ring-white dark:text-white dark:before:bg-white motion-reduce:transition-none;
+		@apply relative rounded-lg border-2 border-black bg-white px-4 py-2 font-mono uppercase text-black shadow-xl ring-black transition-transform duration-200 ease-in-out before:absolute before:top-0 before:h-full before:rounded-lg before:border-inherit before:bg-black before:shadow-md before:duration-200 before:ease-in-out motion-reduce:transition-none dark:border-white dark:bg-black dark:text-white dark:ring-white dark:before:bg-white;
 	}
 }
 

@@ -18,11 +18,11 @@ export default function Header(): JSX.Element {
 
 	return (
 		<header
-			className="container inset-x-0 lowercase mx-auto px-4 py-6 text-black w-screen z-10 dark:text-white md:py-8"
+			className="container inset-x-0 z-10 mx-auto w-screen px-4 py-6 lowercase text-black dark:text-white md:py-8"
 			ref={headerRef}
 		>
 			<div className="flex flex-initial items-center justify-between">
-				<div className="basis-0 grow">
+				<div className="grow basis-0">
 					<Link className="font-mono text-sm md:text-xl" href="/">
 						{LOGO}
 					</Link>
@@ -36,7 +36,7 @@ export default function Header(): JSX.Element {
 					</Link>
 				</nav>
 
-				<div className="basis-0 grow text-right">
+				<div className="grow basis-0 text-right">
 					<ColorSchemeSwitch className="p-1.5 md:p-2" />
 				</div>
 			</div>

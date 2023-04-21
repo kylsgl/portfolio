@@ -18,7 +18,7 @@ export default function HeroTitle({ title }: HeroTitleProps): JSX.Element {
 	}, [title]);
 
 	return (
-		<h1 className="font-semibold leading-none text-4xl md:text-5xl tracking-wide">
+		<h1 className="text-4xl font-semibold leading-none tracking-wide md:text-5xl">
 			{heroTitle}
 		</h1>
 	);

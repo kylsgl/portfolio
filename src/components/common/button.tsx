@@ -33,12 +33,12 @@ export default function Button({
 
 	if (tooltip !== undefined) {
 		return (
-			<div className="flex flex-col group items-center relative" tabIndex={-1}>
-				<div className="absolute bottom-full flex-col hidden items-center mb-4 pointer-events-auto group-hover:flex">
-					<span className="bg-black font-medium leading-none normal-case p-3 relative rounded-lg text-white text-sm dark:bg-white dark:text-black">
+			<div className="group relative flex flex-col items-center" tabIndex={-1}>
+				<div className="pointer-events-auto absolute bottom-full mb-4 hidden flex-col items-center group-hover:flex">
+					<span className="relative rounded-lg bg-black p-3 text-sm font-medium normal-case leading-none text-white dark:bg-white dark:text-black">
 						{tooltip}
 					</span>
-					<div className="bg-black h-3 -mt-2 rotate-45 w-3 dark:bg-white" />
+					<div className="-mt-2 h-3 w-3 rotate-45 bg-black dark:bg-white" />
 				</div>
 				{jsxButton}
 			</div>

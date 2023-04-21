@@ -25,11 +25,11 @@ export default function ProjectsCard({
 
 	return (
 		<article className="card popped max-w-[16.5rem] p-2" tabIndex={0}>
-			<div className="flex flex-col gap-4 h-full justify-between">
+			<div className="flex h-full flex-col justify-between gap-4">
 				<div className="flex flex-col gap-2">
 					<img
 						alt={image.altName}
-						className="bg-black cursor-zoom-in h-[8.578125rem] mx-auto rounded-lg w-fit z-10"
+						className="z-10 mx-auto h-[8.578125rem] w-fit cursor-zoom-in rounded-lg bg-black"
 						decoding="async"
 						loading="lazy"
 						onClick={handleClick}
@@ -37,8 +37,8 @@ export default function ProjectsCard({
 						src={image.url}
 					/>
 
-					<div className="flex flex-col gap-2 justify-center px-1">
-						<div className="flex flex-nowrap flex-row items-center justify-between gap-2">
+					<div className="flex flex-col justify-center gap-2 px-1">
+						<div className="flex flex-row flex-nowrap items-center justify-between gap-2">
 							<h1
 								aria-level={1}
 								className="flex-shrink-1 text-xl font-bold tracking-tight text-black dark:text-white"
@@ -46,7 +46,7 @@ export default function ProjectsCard({
 							>
 								{title}
 							</h1>
-							<div className="flex flex-nowrap flex-row flex-shrink-0 gap-1.5 items-start">
+							<div className="flex flex-shrink-0 flex-row flex-nowrap items-start gap-1.5">
 								<a
 									href={repoUrl}
 									rel="noopener noreferrer"
@@ -75,21 +75,21 @@ export default function ProjectsCard({
 							</div>
 						</div>
 
-						<p className="font-normal normal-case text-sm text-neutral-800 dark:text-neutral-200">
+						<p className="text-sm font-normal normal-case text-neutral-800 dark:text-neutral-200">
 							{description}
 						</p>
 					</div>
 				</div>
 
 				<div
-					className="flex flex-row flex-wrap gap-1 normal-case px-1 text-xs text-white dark:text-black"
+					className="flex flex-row flex-wrap gap-1 px-1 text-xs normal-case text-white dark:text-black"
 					role="list"
 				>
 					{tags
 						.sort((a, b) => b.localeCompare(a))
 						.map((framework) => (
 							<span
-								className="bg-black border-black border px-2 py-1 rounded-lg dark:bg-white"
+								className="rounded-lg border border-black bg-black px-2 py-1 dark:bg-white"
 								key={framework}
 								role="listitem"
 							>

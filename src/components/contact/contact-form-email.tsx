@@ -8,7 +8,7 @@ export default function ContactFormEmail({
 }: ContactFormEmailProps): JSX.Element {
 	return (
 		<a
-			className="border-b border-black flex flex-row font-sans gap-2 items-center justify-center mx-auto wrap normal-case text-md tracking-wider w-max dark:border-white"
+			className="wrap text-md mx-auto flex w-max flex-row items-center justify-center gap-2 border-b border-black font-sans normal-case tracking-wider dark:border-white"
 			href={`mailto:${email}`}
 		>
 			<IconMail size="1rem" />

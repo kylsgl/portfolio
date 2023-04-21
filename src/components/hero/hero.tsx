@@ -16,12 +16,12 @@ export default function Hero({
 	links,
 }: HeroProps): JSX.Element {
 	return (
-		<section className="flex justify-center items-center">
-			<div className="items-center flex flex-col gap-8 text-center relative text-black uppercase dark:text-white">
-				<div className="font-mono flex flex-col gap-2">
+		<section className="flex items-center justify-center">
+			<div className="relative flex flex-col items-center gap-8 text-center uppercase text-black dark:text-white">
+				<div className="flex flex-col gap-2 font-mono">
 					<HeroTitle title={title} />
 
-					<h2 className="font-light text-xl leading-none md:leading-none md:text-2xl text-neutral-400 dark:text-neutral-500">
+					<h2 className="text-xl font-light leading-none text-neutral-400 dark:text-neutral-500 md:text-2xl md:leading-none">
 						{subtitle}
 					</h2>
 				</div>
@@ -32,7 +32,7 @@ export default function Hero({
 					</Button>
 				</Link>
 
-				<div className="flex flex-row gap-4 flex-wrap items-center justify-center">
+				<div className="flex flex-row flex-wrap items-center justify-center gap-4">
 					{links.map(
 						(link: IHeroLink): JSX.Element => (
 							<HeroLink key={link.url} link={link} />

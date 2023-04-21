@@ -13,12 +13,12 @@ export default function ImageModal({
 }: ImageModalProps): JSX.Element {
 	return (
 		<div
-			className="backdrop-blur-sm cursor-zoom-out fixed flex h-full inset-0 items-center justify-start overflow-auto w-full"
+			className="fixed inset-0 flex h-full w-full cursor-zoom-out items-center justify-start overflow-auto backdrop-blur-sm"
 			onClick={onClick}
 		>
 			<img
 				alt={alt}
-				className="max-h-screen mx-auto"
+				className="mx-auto max-h-screen"
 				decoding="async"
 				loading="lazy"
 				src={src}

@@ -14,7 +14,7 @@ export default function ContactForm({
 }: ContactFormProps): JSX.Element {
 	return (
 		<section className="flex items-center justify-center text-black dark:text-white">
-			<div className="card popped flex flex-col gap-5 h-max mx-auto p-8 md:w-96">
+			<div className="card popped mx-auto flex h-max flex-col gap-5 p-8 md:w-96">
 				<h1 className="text-center text-2xl">{title}</h1>
 
 				<div className="flex flex-col gap-3">
@@ -25,9 +25,9 @@ export default function ContactForm({
 					)}
 				</div>
 
-				<div className="inline-flex items-center justify-center w-full">
-					<hr className="bg-black border-0 h-px my-4 w-64 dark:bg-white" />
-					<span className="absolute bg-white px-3 font-medium left-1/2 -translate-x-1/2 dark:bg-black dark:text-white">
+				<div className="inline-flex w-full items-center justify-center">
+					<hr className="my-4 h-px w-64 border-0 bg-black dark:bg-white" />
+					<span className="absolute left-1/2 -translate-x-1/2 bg-white px-3 font-medium dark:bg-black dark:text-white">
 						or
 					</span>
 				</div>

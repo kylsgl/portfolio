@@ -12,7 +12,7 @@ export default function Layout({ children }: LayoutProps): JSX.Element {
 	return (
 		<Fragment>
 			<Header />
-			<main className={`${styles.layout} container h-max mx-auto`}>
+			<main className={`${styles.layout} container mx-auto h-max`}>
 				{children}
 			</main>
 		</Fragment>

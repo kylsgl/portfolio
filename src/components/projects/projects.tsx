@@ -23,9 +23,9 @@ export default function Projects({ projects }: ProjectProps): JSX.Element {
 	};
 
 	return (
-		<section className="flex flex-col flex-wrap gap-20 !h-max items-center justify-center !min-h-0 text-black dark:text-white md:gap-12">
-			<h1 className="font-mono text-5xl text-center">Open-source Projects</h1>
-			<div className="flex flex-wrap gap-6 items-stretch justify-center ">
+		<section className="flex !h-max !min-h-0 flex-col flex-wrap items-center justify-center gap-20 text-black dark:text-white md:gap-12">
+			<h1 className="text-center font-mono text-5xl">Open-source Projects</h1>
+			<div className="flex flex-wrap items-stretch justify-center gap-6 ">
 				{projects.map(
 					(project: Project): JSX.Element => (
 						<ProjectsCard
